@@ -1,4 +1,15 @@
-[monitored_servers]
+[web_servers]
 web1 ansible_host=10.174.34.119
 web2 ansible_host=10.174.34.50
+
+[db_servers]
 db1 ansible_host=10.174.34.196
+
+[file_servers]
+fileserver ansible_host=10.174.34.136
+
+[all:vars]
+apache_package=apache2
+php_package=php
+mariadb_package=mariadb-server
+samba_package=samba
